@@ -1,0 +1,126 @@
+/*general*/
+
+:root {
+    --bg-light: rgb(240,240,250);
+
+    --bg-dark: rgb(90, 1, 167);
+    --bg-darker: rgb(100,80,110);
+    --bg-darkest: rgb(50, 40, 70);
+    --bg-purple: rgb(30,20,50);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--bg-purple);
+  color:white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* image */
+
+.image {
+  margin-top: -50px;
+  height: 170px;
+  border-radius: 2rem;
+  border: 2px solid black;
+}
+
+/* title */
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  font-family: Roboto;
+  margin-bottom: 20px;
+}
+
+/* Input area*/
+
+.input-div {
+  width: min(100vw, 400px);
+  min-height: 100px;
+  background-color: var(--bg-darker);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+label {
+  margin-bottom: 1.1rem;
+}
+
+.palindrome-input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+}
+
+.palindrome-btn {
+  width: 80px;
+  border: none;
+  padding: 10px;
+  border-radius: 0.7rem;
+  background-color: var(--bg-dark);
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.user-input {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.results-div {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: white;
+}
+
+
+/* Definition */
+
+.palindrome-definition-div {
+  width: min(100vw, 450px);
+  font-size: 0.8rem;
+  min-height: 50px;
+  background-color: var(--bg-darker);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.palindrome-definition {
+  vertical-align: middle;
+  text-align: center;
+}
